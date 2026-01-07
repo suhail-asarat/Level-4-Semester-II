@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>CIT-423 Machine Learning - Level-4 Semester-II</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/custom.css" rel="stylesheet" />
+        <link href="https://unpkg.com/katex@0/dist/katex.min.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CIT-423 Machine Learning";
+        var mkdocs_page_input_path = "cit-423.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c++.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Level-4 Semester-II
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Courses</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cse-420/">CSE-420 Project/Thesis</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cse-421/">CSE-421 Seminar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cce-421/">CCE-421 Cryptography and Network Security</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cce-423/">CCE-423 Wireless and Cellular Communication</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cit-421/">CIT-421 Computer Graphics and Image Processing</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cit-422/">CIT-422 Computer Graphics and Image Processing Sessional</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">CIT-423 Machine Learning</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#professor-md-abdul-masud">Professor Md Abdul Masud</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#chapter-2-supervised-learning">Chapter 2 : Supervised Learning</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#21-learning-a-class-from-examples-data">2.1 Learning a Class from Examples (Data)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#22-vapnik-chervonenkis-vc-dimention">2.2 Vapnik-Chervonenkis (VC) Dimention</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#23-probably-approximately-correct-pac-learning">2.3 Probably Approximately Correct (PAC) Learning</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#24-noise">2.4 Noise</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#25-learning-multiple-classes">2.5 Learning Multiple Classes</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#26-regression">2.6 Regression</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#27-model-selection-and-generalization">2.7 Model Selection and Generalization</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#28-dimensions-of-a-supervised-machine-learning-algorithm">2.8 Dimensions of a Supervised Machine Learning Algorithm</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Level-4 Semester-II</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">CIT-423 Machine Learning</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cit-423-machine-learing">CIT-423 Machine Learing</h1>
+<h2 id="professor-md-abdul-masud">Professor Md Abdul Masud</h2>
+<p>Reference Book: <a href="../pdf/Ethem%20Alpaydin%20-%20Introduction%20to%20Machine%20Learning-The%20MIT%20Press%20%282014%29.pdf">Ethem Alpaydın - Introduction to Machine Learning (Third Edition)</a></p>
+<h3 id="introduction">Introduction</h3>
+<ul>
+<li>Concepts on Machine Learning, Deep Learning, and Reinforcement Learning</li>
+<li>
+<p>Concepts on Supervised Learning, Unsupervised Learning, and Semi-Supervised Learning</p>
+</li>
+<li>
+<p>Supervised Learning</p>
+<ul>
+<li>Discrete <span class="arithmatex">\(\to\)</span> Classification <span class="arithmatex">\(\to\)</span> Accuracy</li>
+<li>Continuous <span class="arithmatex">\(\to\)</span> Regression <span class="arithmatex">\(\to\)</span> Error</li>
+</ul>
+</li>
+<li>
+<p>Prameter Estimation <span class="arithmatex">\(\to\)</span> Linear Regression</p>
+</li>
+</ul>
+<h3 id="chapter-2-supervised-learning">Chapter 2 : Supervised Learning</h3>
+<h4 id="21-learning-a-class-from-examples-data">2.1 Learning a Class from Examples (Data)</h4>
+<p><strong>Classification:</strong></p>
+<ul>
+<li>Hypothesis <span class="arithmatex">\(\to\)</span> Equation/Mathematical Model</li>
+</ul>
+<div class="arithmatex">\[ Error, E(h|x) = \sum_{t=1}^{N} (h(t) \neq r^t) \]</div>
+<ul>
+<li>Most specific hypothesis <span class="arithmatex">\(\to\)</span> tightest hypothesis + all positive</li>
+<li>Most general hypothesis <span class="arithmatex">\(\to\)</span> largest hypothesis</li>
+</ul>
+<p><img alt="Figure 2.3" src="../img/cit-423/Fig_2-3.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Assignment</p>
+<p><strong>Multi-Class Classification</strong></p>
+<ul>
+<li>Confusion Matrix</li>
+<li>Accuracy</li>
+<li>Precision</li>
+<li>Recall</li>
+<li>F1-Score</li>
+<li>ROC Curve</li>
+</ul>
+</div>
+<h4 id="22-vapnik-chervonenkis-vc-dimention">2.2 Vapnik-Chervonenkis (VC) Dimention</h4>
+<ul>
+<li>largest point</li>
+<li>n points <span class="arithmatex">\(\to\)</span> <span class="arithmatex">\(2^n\)</span> possible points</li>
+<li><span class="arithmatex">\(\tau = {f(x)}\)</span></li>
+</ul>
+<h4 id="23-probably-approximately-correct-pac-learning">2.3 Probably Approximately Correct (PAC) Learning</h4>
+<p>Given a class, <span class="arithmatex">\(C\)</span>, and examples drawn from some unknown but fixed probability distribution, <span class="arithmatex">\(p(x)\)</span>, we want to find the number of examples, <span class="arithmatex">\(N\)</span>, such that with probability at least <span class="arithmatex">\(1 − δ\)</span>, the hypothesis <span class="arithmatex">\(h\)</span> has error at most <span class="arithmatex">\(\epsilon\)</span>, for arbitrary <span class="arithmatex">\(δ ≤ 1/2\)</span> and <span class="arithmatex">\(\epsilon &gt; 0\)</span>  </p>
+<div class="arithmatex">\[
+P \{CΔh ≤ \epsilon \} ≥ 1 − δ
+\]</div>
+<p>where <span class="arithmatex">\(CΔh\)</span> is the region of difference between <span class="arithmatex">\(C\)</span> and <span class="arithmatex">\(h\)</span></p>
+<h4 id="24-noise">2.4 Noise</h4>
+<h4 id="25-learning-multiple-classes">2.5 Learning Multiple Classes</h4>
+<p>In the general case, we have <span class="arithmatex">\(K\)</span> classes denoted as <span class="arithmatex">\(C_i, i = 1, . . . , K\)</span>, and an input instance belongs to one and exactly one of them. The training set is now of the form  <span class="arithmatex">\(X = \{x^t , r^t \}N  t =1\)</span> where <span class="arithmatex">\(r\)</span> has <span class="arithmatex">\(K\)</span> dimensions and  </p>
+<div class="arithmatex">\[r^{t}_{i}=  
+    \begin{cases}
+        1, &amp; {\text{if } x^t ∈ C_i}.\\
+        0, &amp; {\text{if } x^t ∈ C_j , j \neq i}.
+    \end{cases}
+\]</div>
+<p>We have <span class="arithmatex">\(K\)</span> hypotheses to learn such that,</p>
+<div class="arithmatex">\[h_i (x^t)=  
+    \begin{cases}
+        1, &amp; {\text{if } x^t ∈ C_i}.\\
+        0, &amp; {\text{if } x^t ∈ C_j , j \neq i}.
+    \end{cases}
+\]</div>
+<p>The total empirical error takes a sum over the predictions for all classes over all instances:</p>
+<div class="arithmatex">\[
+    E (\{h_i \}_{i=1}^{K} | X) =  \sum_{t=1}^{N}  \sum_{i=1}^{K}  1 (h_i(x^t) \neq r_{i}^{t} )
+\]</div>
+<h4 id="26-regression">2.6 Regression</h4>
+<ul>
+<li>The function is not known but we have a training set of examples drawn from it, where <span class="arithmatex">\(r^t ∈ \mathbb{R}\)</span>. If there is no noise, the task is interpolation.</li>
+</ul>
+<div class="arithmatex">\[X = \{x^t, r^t \}^{N}_{t=1}\]</div>
+<ul>
+<li>
+<p>We would like to find the function <span class="arithmatex">\(f(x)\)</span> that passes through these points such that we have  <span class="arithmatex">\(r^t = f(x^t)\)</span></p>
+</li>
+<li>
+<p>In polynomial interpolation, given <span class="arithmatex">\(N\)</span> points, we find the <span class="arithmatex">\((N−1)\)</span>st degree polynomial that we can use to predict the output for any <span class="arithmatex">\(x\)</span>. This is called extrapolation extrapolation if <span class="arithmatex">\(x\)</span> is outside of the range of <span class="arithmatex">\(x^t\)</span> in the training set.</p>
+</li>
+<li>
+<p>In regression, there is noise added to the output of the unknown function where <span class="arithmatex">\(f(x) ∈ \mathbb{R}\)</span> is the unknown function and is random noise.</p>
+</li>
+</ul>
+<div class="arithmatex">\[r^t = f(x^t) + \epsilon\]</div>
+<ul>
+<li>The explanation for noise is that there are extra hidden variables that we cannot observe where <span class="arithmatex">\(z^t\)</span> denote those hidden variables.</li>
+</ul>
+<div class="arithmatex">\[r^t = f∗(x^t, z^t)\]</div>
+<ul>
+<li>The empirical error on the training set <span class="arithmatex">\(X\)</span> is  </li>
+</ul>
+<div class="arithmatex">\[E(g|X) = \frac{1}{N} \sum_{t=1}^{N} [r^t − g(x^t)]^2\]</div>
+<ul>
+<li>Our aim is to find <span class="arithmatex">\(g(·)\)</span> that minimizes the empirical error.</li>
+</ul>
+<div class="arithmatex">\[g(x) = w_1 x_1 + · · · + w_d x_d + w_0 =  \sum_{j=1}^{d}  w_j x_j + w_0\]</div>
+<ul>
+<li>There we used a single input linear model where <span class="arithmatex">\(w_1\)</span> and <span class="arithmatex">\(w_0\)</span> are the parameters to learn from data.</li>
+</ul>
+<div class="arithmatex">\[g(x) = w_1 x + w_0\]</div>
+<ul>
+<li>The <span class="arithmatex">\(w_1\)</span> and <span class="arithmatex">\(w_0\)</span> values should minimize where <span class="arithmatex">\(\bar{x} = \sum_{t} x^t /N\)</span> and <span class="arithmatex">\(\bar{r} = \sum_{t} r^t/N\)</span></li>
+</ul>
+<div class="arithmatex">\[E(w_1, w_0 |X) = \frac{1}{N} \sum_{t=1}{N} [r^t − (w_1 x^t + w_0)]^2\]</div>
+<div class="arithmatex">\[w_1 = \frac{ \sum_{t} x^t r^t − \overline{xr} N} { \sum_{t} (x^t)^2 − N\bar{x}^2}\]</div>
+<div class="arithmatex">\[w_0 = \bar{r} − w_1x\]</div>
+<p><img alt="Table 2.1" src="../img/cit-423/Table_2-1.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Assignment</p>
+<p>Errors and Evaluation Metrics for Regression</p>
+</div>
+<h4 id="27-model-selection-and-generalization">2.7 Model Selection and Generalization</h4>
+<p><img alt="Underfitting and Overfitting" src="../img/cit-423/underfitting-overfitting.png" /></p>
+<h4 id="28-dimensions-of-a-supervised-machine-learning-algorithm">2.8 Dimensions of a Supervised Machine Learning Algorithm</h4>
+<ul>
+<li>Loss function, <span class="arithmatex">\(L(·)\)</span>, to compute the difference between the desired output, <span class="arithmatex">\(r^t\)</span>, and our approximation to it, <span class="arithmatex">\(g(x^t |θ)\)</span>, given the current value of the parameters, <span class="arithmatex">\(θ\)</span>. The approximation error, or loss, is the sum of losses over the individual instances</li>
+</ul>
+<div class="arithmatex">\[E(θ|X) = \sum_{t} L (r^t, g(x^t |θ))$\]</div>
+<ul>
+<li>Optimization procedure to find θ∗ that minimizes the total error</li>
+</ul>
+<div class="arithmatex">\[θ^∗ = \text{arg }^{\text{min}}_{θ} ~E(θ|X)\]</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../cit-422/" class="btn btn-neutral float-left" title="CIT-422 Computer Graphics and Image Processing Sessional"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &#x1F12F; 2025 <a href=https://github.com/suhail-asarat>Mir Suhail Asarat</a></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../cit-422/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/copy-code.js"></script>
+      <script src="../js/mathjax.js"></script>
+      <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
