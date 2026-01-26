@@ -105,11 +105,27 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#chapter-3-pixels-book-4">Chapter 3 : Pixels (Book 4)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#31-what-is-pixel">3.1 What is Pixel?</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#32-operation-upon-pixels">3.2 Operation upon pixels</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#33-point-based-slide">3.3 Point-based (slide)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#34-pixel-distributions-histograms">3.4 Pixel Distributions: Histograms</a>
+    </li>
+        </ul>
+    </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#md-mahbubur-rahman">Md Mahbubur Rahman</a>
         <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-books">Reference Books</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#mark-distribution">Mark Distribution</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#computer-graphics-tutorial">Computer Graphics Tutorial</a>
     </li>
         </ul>
     </li>
@@ -154,6 +170,7 @@
 <li>Fundamentals of I.</li>
 <li>Image Processing - The Fundamentals</li>
 <li>Principle of Digital Image Processing</li>
+<li>Pixels : Basis of all Image Processing</li>
 </ol>
 <h3 id="chapter-1-representation-book-1">Chapter-1 Representation (Book 1)</h3>
 <h4 id="11-what-is-an-image">1.1 What is an Image?</h4>
@@ -242,12 +259,97 @@
 <p>(self study)</p>
 <h4 id="35">3.5</h4>
 <p>(self study)</p>
+<h3 id="chapter-3-pixels-book-4">Chapter 3 : Pixels (Book 4)</h3>
+<p>[Slide]</p>
+<p>Pixel transform, distribution of Pixels</p>
+<h4 id="31-what-is-pixel">3.1 What is Pixel?</h4>
+<p>Pixel is an abbreviation of "picture element" indexed an (x,y) column(c)-row(r)</p>
+<ul>
+<li>Spatial resolution</li>
+<li>Quantization level</li>
+</ul>
+<h5 id="types-of-image-study-in-details">Types of image - (study in details)</h5>
+<ol>
+<li>Color/Gray image</li>
+<li>Infrared image (IR) <span class="arithmatex">\(\to\)</span> IR light reflection/ IR radiation</li>
+<li>Medical Imaging - CT imaging, MRI imaging</li>
+<li>Radar/Solar imaging</li>
+<li>3D imaging</li>
+<li>Scientific imaging</li>
+</ol>
+<h4 id="32-operation-upon-pixels">3.2 Operation upon pixels</h4>
+<ul>
+<li>Point transform</li>
+<li>Arithmetic operation</li>
+<li>Logical operation</li>
+</ul>
+<h5 id="one-one-function-mapping">One-one function mapping</h5>
+<p><span class="arithmatex">\(I_A\)</span>, <span class="arithmatex">\(I_B\)</span>, <span class="arithmatex">\(C\)</span></p>
+<p><span class="arithmatex">\(I_output = I_A + I_B = I_A (i,j) + I_B (i,j) = I_A + C = I_A (i,j) + C\)</span></p>
+<p><span class="arithmatex">\((i,j) = \{0, 1, 2,..., C-1\} \{0, 1, 2,..., R-1\}\)</span></p>
+<p>Arithmetic Operation:</p>
+<ul>
+<li>Contrast adjustment</li>
+<li>Blending
+(self study and codeing)</li>
+<li>Subtraction, Multiplication, Division</li>
+</ul>
+<div class="admonition assignement">
+<p class="admonition-title">Assignement</p>
+<p>Code implementation of arithmetic operations:</p>
+<ul>
+<li>Contrast adjustment</li>
+<li>Blending</li>
+<li>Subtraction</li>
+<li>Multiplication</li>
+<li>Division</li>
+</ul>
+</div>
+<h5 id="322-logical-operation">3.2.2 Logical operation</h5>
+<p>NOT, XOR, OR, AND, Bitwise operation</p>
+<p>NOT: Inversion BU <span class="arithmatex">\(\to\)</span>FG</p>
+<p><span class="arithmatex">\(I_{output} (i,j) = MAX - I_{input} (i,j)\)</span></p>
+<p>Image data type (previous class)</p>
+<h5 id="323-thresholding-slide">3.2.3 Thresholding (Slide)</h5>
+<p>fig 3.4
+fig 3.5 (self study)</p>
+<h4 id="33-point-based-slide">3.3 Point-based (slide)</h4>
+<ul>
+<li>Functional transformation</li>
+<li>Dynamic range <span class="arithmatex">\(\star \star \star\)</span></li>
+</ul>
+<h5 id="331-logarithmic-transform-slide">3.3.1 Logarithmic transform (slide)</h5>
+<h5 id="exponential-transformation-slide">Exponential transformation (slide)</h5>
+<h4 id="34-pixel-distributions-histograms">3.4 Pixel Distributions: Histograms</h4>
+<p>Textbook-I, Page: 367</p>
+<h5 id="341-histogram-for-threshold-selection-book-slide">3.4.1 Histogram for Threshold Selection (Book + Slide)</h5>
+<p>fig 3.13</p>
+<h5 id="342-adaptive-thresholding-slide">3.4.2 Adaptive Thresholding (slide)</h5>
+<h5 id="343-contrast-stretching-slide">3.4.3 Contrast Stretching (slide)</h5>
+<h5 id="344-hologram-equalization-slide">3.4.4 Hologram Equalization (slide)</h5>
+<div class="admonition note">
+<p class="admonition-title">Assignment</p>
+<ul>
+<li>to code all from the book</li>
+</ul>
+</div>
 <h2 id="md-mahbubur-rahman">Md Mahbubur Rahman</h2>
-<p>Reference Book: Computer Graphics - Schaums</p>
+<h3 id="reference-books">Reference Books</h3>
+<ol>
+<li><a href="../pdf/Zhigang%20Xiang%2C%20Roy%20A.%20Plastock%20-%20Schaum%E2%80%99s%20Outline%20of%20Computer%20Graphics%20%282nd%20Edition%29.pdf">Zhigang Xiang, Roy A. Plastock - Schaum’s Outline of Computer Graphics (2nd Edition)</a></li>
+<li><a href="../pdf/Gonzales%2C%20Woods%20-%20Digital%20Image%20Processing%20%284th%20Edition%29.pdf">Gonzales, Woods - Digital Image Processing (4th Edition)</a></li>
+</ol>
+<p>Resource: <a href="https://www.tpointtech.com/computer-graphics-tutorial">Tpoint Tech</a></p>
 <h3 id="mark-distribution">Mark Distribution</h3>
 <p>3 Sets</p>
 <p>Slide: 19-33
 Visual Computing</p>
+<h3 id="computer-graphics-tutorial">Computer Graphics Tutorial</h3>
+<p><a href="https://www.tpointtech.com/computer-graphics-tutorial">link1</a></p>
+<p><a href="https://www.tpointtech.com/interactive-and-passive-graphics">link2</a></p>
+<p>DPI <span class="arithmatex">\(\to\)</span> Dot Per Inch</p>
+<p><a href="https://www.tpointtech.com/computer-graphics-display-processor">link3</a></p>
+<p>next: Cathode Ray Tube</p>
               
             </div>
           </div><footer>
