@@ -153,7 +153,7 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#chapter-9-convolutional-network-book-2">Chapter 9 : Convolutional Network (Book-2)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#chapter-9-convolutional-networks-book-3">Chapter 9 : Convolutional Networks (Book-3)</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#91-the-convolution-operation">9.1 The Convolution Operation</a>
     </li>
@@ -163,7 +163,15 @@
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#recurrent-neural-network-rnn">Recurrent Neural Network (RNN)</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#understanding-lstm-networks-to-website-figure">Understanding LSTM Networks \(\to\) website (figure)</a>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#understanding-lstm-networks-sheet-1">Understanding LSTM Networks (Sheet-1)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#lstm-networks-book-website">LSTM Networks (Book + Website)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#core-idea-behind-lstm">Core idea behind LSTM</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-by-step-lstm-work-though">Step by step LSTM work though</a>
     </li>
         </ul>
     </li>
@@ -205,12 +213,10 @@
 <h2 id="professor-md-abdul-masud">Professor Md Abdul Masud</h2>
 <h3 id="references">References</h3>
 <ul>
-<li>
-<p>Book-1: <a href="https://drive.google.com/file/d/1eclKsU9D2TqR9amu_3F7dxgPgYRGPf-t/view?usp=drive_link">Ethem Alpaydın - Introduction to Machine Learning (Third Edition)</a></p>
-</li>
-<li>
-<p>Book-2: <a href="https://drive.google.com/file/d/1H6HotCiSVA3sbZm4mugAR1MzCdsgxfam/view?usp=drive_link">Tom M. Mitchell - Machine Learning</a></p>
-</li>
+<li>Book-1: <a href="https://drive.google.com/file/d/1eclKsU9D2TqR9amu_3F7dxgPgYRGPf-t/view?usp=drive_link">Ethem Alpaydın - Introduction to Machine Learning (Third Edition)</a></li>
+<li>Book-2: <a href="https://drive.google.com/file/d/1H6HotCiSVA3sbZm4mugAR1MzCdsgxfam/view?usp=drive_link">Tom M. Mitchell - Machine Learning</a></li>
+<li>Book-3: <a href="https://drive.google.com/file/d/1QvNmulmJVHyLQ1oofHAgXvy1VRrKO24u/view?usp=drive_link">Ian Goodfellow, Yoshua Bengio, Aaron Courville - Deep Learning - MIT Press (2016)</a></li>
+<li>Sheet-1: Understanding LSTM Networks - {<a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">Web Link</a>} - {<a href="https://drive.google.com/file/d/1mMJa5qB9ml6-mOTrvsmuk4I7N3qtqgi9/view?usp=drive_link">PDF</a>}</li>
 </ul>
 <h3 id="introduction">Introduction</h3>
 <ul>
@@ -230,6 +236,7 @@
 </li>
 </ul>
 <h3 id="chapter-2-supervised-learning-book-1">Chapter 2 : Supervised Learning (Book-1)</h3>
+<p>Slide: <a href="https://docs.google.com/presentation/d/13kf3hriOHGFecWnPUT0r7Xgh9uFElqA0">i2ml2e-chap2-v1-0</a></p>
 <h4 id="21-learning-a-class-from-examples-data">2.1 Learning a Class from Examples (Data)</h4>
 <p><strong>Classification:</strong></p>
 <ul>
@@ -347,6 +354,7 @@ P \{CΔh ≤ \epsilon \} ≥ 1 − δ
 <h4 id="33-losses-and-risks">3.3 Losses and Risks</h4>
 <p>--</p>
 <h3 id="chapter-4-parametric-methods-book-1">Chapter 4 : Parametric Methods (Book-1)</h3>
+<p>Slide: <a href="https://docs.google.com/presentation/d/1a-vPzaZDmyfgqtWpyBV32ZQIWaP8zmxo">i2ml2e-chap4-v1-0 Parametric Methods</a></p>
 <ul>
 <li>
 <p>How to estimate probabilities from a given training set?</p>
@@ -415,7 +423,7 @@ T 4.2</p>
 <p>Table 4.2</p>
 <h5 id="453-derivation-of-back-propagation-rule">4.5.3 Derivation of Back Propagation Rule</h5>
 <p>figures from 4.6.4 and 4.6.5</p>
-<h3 id="chapter-9-convolutional-network-book-2">Chapter 9 : Convolutional Network (Book-2)</h3>
+<h3 id="chapter-9-convolutional-networks-book-3">Chapter 9 : Convolutional Networks (Book-3)</h3>
 <p>Neural Network <span class="arithmatex">\(\to\)</span> DL</p>
 <ul>
 <li>Forward Propagation</li>
@@ -453,12 +461,13 @@ Different Activation Methods</p>
 </ul>
 </li>
 </ul>
-<h4 id="understanding-lstm-networks-to-website-figure">Understanding LSTM Networks <span class="arithmatex">\(\to\)</span> website (figure)</h4>
-<h5 id="lstm-networks-book-website">LSTM Networks (Book + Website)</h5>
+<h3 id="understanding-lstm-networks-sheet-1">Understanding LSTM Networks (Sheet-1)</h3>
+<p>Figures</p>
+<h4 id="lstm-networks-book-website">LSTM Networks (Book + Website)</h4>
 <p>The repeating module in a standard RNN contains a single layer.</p>
-<h5 id="core-idea-behind-lstm">Core idea behind LSTM</h5>
+<h4 id="core-idea-behind-lstm">Core idea behind LSTM</h4>
 <p>Gate <span class="arithmatex">\(\to\)</span> Information <span class="arithmatex">\(\to\)</span> Through/Remove</p>
-<h5 id="step-by-step-lstm-work-though">Step by step LSTM work though</h5>
+<h4 id="step-by-step-lstm-work-though">Step by step LSTM work though</h4>
 <p>Varient of LSTM <span class="arithmatex">\(\to\)</span> Assignment</p>
 <h2 id="muhtasim">Muhtasim</h2>
 <h3 id="topics-of-lecture-01">Topics of Lecture - 01</h3>
