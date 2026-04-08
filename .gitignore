@@ -1,3 +1,4 @@
 # exclude /site directory
 site/
 /.venv
+/.vscode
